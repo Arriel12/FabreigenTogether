@@ -12,7 +12,8 @@ body, html {height: 100%}
 .bgimg {
   background-image: url('./ELUL.png');
   min-height: 100%;
-  background-position: center;
+  width: 100%;
+  background-position: left;
   background-size: cover;
 }
 </style>
@@ -37,10 +38,10 @@ body, html {height: 100%}
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
     // Output the result in an element with id="demo"
-    document.getElementById("targetDate").innerHTML = "<h3 dir='rtl'> תחל בעוד " +days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s </h3>";
+    document.getElementById("targetDate").innerHTML = "<h3 dir='rtl' style='color:red'> תחל בעוד " +days + " ימים | " + hours + " שעות | "
+    + minutes + " דקות | " + seconds + " שניות </h3>";
 
-    document.getElementById("location").innerHTML = "<h3 dir='rtl' style='color:#FFDF00'> התוועדות הכנה לראש השנה כיד המלך🤴 <br> אחדות 15 דירה 6 בשעה 22:00 בלילה.<br> בואו בשמחה🍷🍷 </h3>"
+    document.getElementById("location").innerHTML = "<h3 dir='rtl' style='color:orange'> התוועדות הכנה לראש השנה כיד המלך🤴 <br> אחדות 15 דירה 6 בשעה 22:00 בלילה.<br> בואו בשמחה🍷🍷 </h3>"
         
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -57,14 +58,14 @@ body, html {height: 100%}
     חסידי בצוותא דק"ק יחדיו
   </div>
   <div class="w3-display-middle">
-    <h2 class="w3-jumbo w3-animate-top" style='color:#FFDF00'>התוועדות חסידי בצוותא</h2>
-    <hr class="w3-border-grey" style="margin:auto;width:60%">
+    <h3 class="w3-jumbo w3-animate-top" style='color:#FFDF00'>התוועדות חסידי בצוותא</h3>
+    <hr class="w3-border-grey" style="margin:auto; width:60%;  color: whitesmoke">
     <p id="targetDate" class="w3-large w3-center"></p>
     <br>
     <p id="location" class="w3-large w3-center"></p>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
-    Powered by Ariel Halevi
+    Powered by A.H
   </div>
 </div>
 
