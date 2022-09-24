@@ -36,9 +36,10 @@ body, html {height: 100%}
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
         
     // Output the result in an element with id="demo"
-    document.getElementById("targetDate").innerHTML = "<h3 dir='rtl' style='color:red'> תחל בעוד " +days + " ימים | " + hours + " שעות | "
+    document.getElementById("targetDate").innerHTML = "<h3 dir='rtl' style='color:red'> תחל בעוד " +days + " ימים | " + hours + " שעות | " 
     + minutes + " דקות | " + seconds + " שניות </h3>";
 
     document.getElementById("location").innerHTML = "<h3 dir='rtl' style='color:orange'> התוועדות הכנה לראש השנה כיד המלך🤴 <br> אחדות 15 דירה 6 בשעה 22:00 בלילה.<br> בואו בשמחה🍷🍷 </h3>"
